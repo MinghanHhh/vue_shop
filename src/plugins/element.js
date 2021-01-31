@@ -11,9 +11,9 @@ import { Button, Form, FormItem, Input,
           Main, Menu, MenuItem, Submenu,
           Breadcrumb, BreadcrumbItem, card,
           Row, Col, Table, TableColumn,
-          Switch, Tooltip, Pagination, Dialog,
-          MessageBox, Tag, Tree,
-          Select, Option
+          Switch, Tooltip, Pagination,
+          Dialog, MessageBox, Tag, Tree,
+          Select, Option, Cascader
 } from 'element-ui'
 
 
@@ -44,6 +44,8 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
+
 //把弹框组件挂在到了vue的原型对象上,每一个组件都可以通过this访问$message,就可以实现弹框提示了
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
